@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image:url("slike/slika1.jpg");
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+#forma1{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+}
+#forma1 label , #forma1 input{
+    width: 50%;
+}
+#forma1 label , #forma1 input,#forma1 button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+#naslov{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+#forma1 button{
+    /*background-color: rgb(21, 142, 182) ;*/
+    background-color: transparent;
+    border:none;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: larger;
+    transition:all 0.5s;
+}
+#forma1 button:hover{
+    background-color: rgb(21, 142, 182) ;
+    color: white;
+}
+
+#nemateNalog{
+    text-align: center;
+    color: blue;
+}
+#forma2{
+    height:70%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position:fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 25%;
+}
+#forma2 label , #forma2 input{
+    width: 50%;
+}
+#forma2 label , #forma2 input,#forma2 button{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+#forma2 button{
+    width:100px;
+}
