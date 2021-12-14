@@ -15,6 +15,7 @@ function registrujSe(){
         type:"post",
         data:serijalizacija
     });
+    
     req.done(function(res,textStatus, jqXHR){
         if(res=="uspesno ste se registrovali"){
             alert("uspesno ste se registrovali");

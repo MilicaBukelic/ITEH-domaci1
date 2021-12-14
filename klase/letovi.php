@@ -34,22 +34,19 @@
             return $obj;
         }
 
-        public function deleteById(mysqli $conn){
-            $query = "DELETE FROM letovi WHERE sifra = $this->sifra";
-            return $conn->query($query);
+        public static function obrisiLet(mysqli $conn,$sifra){
+            $query_del = "DELETE FROM letovi WHERE sifra = '$sifra'";
+            return $conn->query($query_del);
         }
 
-        public function update($sifra, mysqli $conn){
-            $query = "UPDATE letovi SET destinacijPolaska = $this->destinacijaPolaska,
-            destinacijDolaska = $this->destinacijaDolaska,aviokompanija = $this -> aviokompanija, 
-            datum = $this->datum";
-            return $conn->query($query);
+        public function izmeniLet(mysqli $conn){
+            $query_up = "UPDATE letovi SET destinacijaPolaska = '$this->destinacijaPolaska', destinacijaDolaska = '$this->destinacijaDolaska',aviokompanija = '$this->aviokompanija', datum = '$this->datum' WHERE sifra ='$this->sifra'";
+            return $conn->query($query_up);
         }
 
-        public static function add (Let $let, mysqli $conn){
-            $query = "INSERT INTO rezervacije(destinacijaPolaska, destinacijaDolaska, aviokompanija, datum) 
-                      VALUES ('$let->destinacijaPolaska', '$let-> destinacijaDolaska', 
-                       '$let->aviokompanija','$let->datum')";
+        public static function DodajLet(mysqli $conn, Let $let){
+            $query_add = "INSERT INTO letovi(sifra,destinacijaPolaska,destinacijaDolaska,aviokompanija,datum) VALUES ('$let->sifra','$let->destinacijaPolaska','$let->destinacijaDolaska','$let->aviokompanija','$let->datum');";
+            return $conn->query($query_add);
         }
     }
 

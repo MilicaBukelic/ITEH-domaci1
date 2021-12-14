@@ -42,3 +42,189 @@ tr:nth-child(even){
     background-color: rgba(62, 181, 236, 0.808);
 }
 
+#rezervisi{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 20px;
+    border:none;
+    height: 20px;
+    background-color: white ;
+}
+
+#dodaj{
+    margin-right: auto;
+    margin-left: auto;
+    position:absolute;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+
+}
+
+#rezervacija{
+    display: none;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: white;
+    width: 40%;
+}
+
+#rezervacija label{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+ #rezervacija input{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+#rezervacija button{
+    width:100px;
+    height: 20px;
+    background-color: rgba(62, 181, 236, 0.808);
+    border: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#izmeni{
+    margin-right: auto;
+    margin-left: auto;
+    position:absolute;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+}
+
+#izmena{
+    display: none;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: white;
+    width: 40%;
+}
+
+#izmena label{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+ #izmena input{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+#izmena button{
+    width:100px;
+    height: 20px;
+    background-color: rgba(62, 181, 236, 0.808);
+    border: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#obrisi{
+    margin-right: auto;
+    margin-left: auto;
+    position:absolute;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+}
+
+#brisanje{
+    display: none;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: white;
+    width: 40%;
+}
+
+#promeni{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 20px;
+    border:none;
+    height: 20px;
+    background-color: white;
+}
+
+#izbrisi{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 20px;
+    border:none;
+    height: 40px;
+    background-color: white;
+}
+
+#brisanje button{
+    width:100px;
+    height: 20px;
+    background-color: rgba(62, 181, 236, 0.808);
+    border: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#brisanje label{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+#brisanje input{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#dugmici .btn_home{
+    height: 100%;
+    width: 100px;
+}
+
+#dugmici{
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+
+
